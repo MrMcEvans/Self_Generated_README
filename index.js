@@ -34,17 +34,17 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Usage',
+        name: 'usage',
         message: 'Please tell the user what they need to know about using your project.'
     },
     {
         type: 'input',
-        name: 'command i',
+        name: 'install',
         message: 'What command should be run to install dependencies?'
     },
     {
         type: 'input',
-        name: 'command test',
+        name: 'commandTest',
         message: 'What command should be run initiate a test?'
     },
     {
