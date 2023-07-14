@@ -1,18 +1,18 @@
-
+//collects url for license badge
 function renderLicenseBadge(license) {
   if (license !== 'NONE') {
     return `![Github license](https://img.shields.io/badge/License-${license}-yellow.svg)`;
   }
   return '';
 }
-
+//creates the license link
 function renderLicenseLink(license) {
   if (license !== 'NONE'){
     return `\n* [license](#license)\n`
   }
   return "";
 }
-
+//saves licencse input to be properly displayed in the README
 function renderLicenseSection(license) {
     if (license !== 'NONE'){
   return `<h2>License</h2>
@@ -21,11 +21,11 @@ function renderLicenseSection(license) {
 }
 return '';}
 
-
+//Builds README
 function generateMarkdown(data) {
   return `<h1># ${data.title}</h1>
 
-  
+
 ${renderLicenseBadge(data.license)}
 
 
@@ -62,7 +62,7 @@ ${renderLicenseBadge(data.license)}
 
 <h3>${data.commandTest}</h3>
 
-<h2 id="license">${renderLicenseSection(data.license)}</h2>
+<h2 id="license">${renderLicenseSection(data.license)}   ${renderLicenseLink(data.license)}</h2>
 
 
 <h2 id="question">Questions</h2>
@@ -72,7 +72,12 @@ If you have any questions you can contact me at my GitHub (1) or by email (2)
 <h3>(1) [${data.github}] (https://github.com/${data.github})</h3>
 
 <h3>(2) ${data.email}</h3>
+
+
+
+
+<p>
 `;
 }
-
+//exports to index.js file
 module.exports = generateMarkdown;

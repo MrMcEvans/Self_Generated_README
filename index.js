@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 const path = require('path');
-
+//array of questions for the user
 const questions = [
     {
         type: 'input',
@@ -55,7 +55,7 @@ const questions = [
 function writeToFile(README, data) {
     return fs.writeFileSync(path.join(process.cwd(), README), data);
 }
-
+//initialize the application
 function init() {
     inquirer.prompt(questions).then((inquirerResponses) => {
         console.log('Here are your responses', inquirerResponses)
@@ -63,5 +63,5 @@ function init() {
         writeToFile("README.md", generateMarkdown({ ...inquirerResponses }));
     });
 }
-
+// runs init function
 init();
