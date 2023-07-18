@@ -8,6 +8,6 @@ that will place all necessary info in the correct place.</h3>
 
 <h2>Deployed Application: N/a no deployment for this assignment</h2>
 
-<h2>Link to video showing off the program: </h2>
+<h2>Link to video showing off the program: https://app.screencastify.com/manage/videos/X8J91B13OI58wKYDQOan</h2>
 
 

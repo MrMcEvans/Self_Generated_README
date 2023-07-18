@@ -69,9 +69,9 @@ ${renderLicenseBadge(data.license)}
 
 If you have any questions you can contact me at my GitHub (1) or by email (2)
 
-<h3>(1) [${data.github}] (https://github.com/${data.github})</h3>
+(1) [${data.github}] (https://github.com/${data.github})
 
-<h3>(2) ${data.email}</h3>
+(2) ${data.email}
 
 
 
